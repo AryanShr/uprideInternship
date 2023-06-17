@@ -58,7 +58,7 @@ function MainContent() {
             </div>
             <div className="w-[95%] lg:w-[55%] flex flex-col font-opensans mt-4">
                 <div className='w-full  border-b-2 border-gray-200'>
-                    <ul className="flex justify-between text-center w-[80%] lg:w-[60%] text-gray-500">
+                    <ul className="flex justify-between text-center w-[80%] font-opensans font-semibold lg:w-[60%] text-gray-500">
                         <li className="">
                             <button onClick={() => setActive(1)} className={`flex justify-center px-4 lg:px-8 border-b-4 border-transparent pt-2 ${Active === 1 && "text-[#FF5757]"}`}>
                                 Active
