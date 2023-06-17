@@ -29,7 +29,7 @@ function Data(props) {
                 <div className="w-full overflow-x-auto">
                     <table className="w-full table-auto">
                         <thead className='shadow-[0_2px_4px_0_rgba(0,0,0,0.15)]'>
-                            <tr className="text-sm font-semibold tracking-wide text-center text-gray-900 bg-[#D9D9D94D]">
+                            <tr className="text-xs font-semibold font-opensans tracking-wide text-center text-gray-900 bg-[#D9D9D94D]">
                                 <th className="px-4 py-3">Name</th>
                                 <th className="px-4 py-3">Date</th>
                                 <th className="px-4 py-3">Package Details</th>
@@ -48,14 +48,14 @@ function Data(props) {
                                                     <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                                                 </div>
                                                 <div className='w-full md:w-min'>
-                                                    <p className="font-semibold text-black ">{item.clientName}</p>
+                                                    <p className="font-semibold text-black text-xs font-algreya">{item.clientName}</p>
                                                 </div>
                                             </div>
                                         </td>
-                                        <td className=" py-3 text-sm font-normal">{convdate(item.bookingEpochTime)}</td>
-                                        <td className="px-4 py-3 text-ms font-normal text-center">{item.packageTitle}</td>
-                                        <td className="lg:px-6 py-3 text-xs ">
-                                            <div className={`py-1 font-semibold leading-tight text-white ${!item.offlineBooking?"bg-[#35DBA2]":"bg-[#FFCA28]"} rounded-full`}> {item.cat ==="offline_bookings" ? "Offline Payment" : "Online Payment"}</div>
+                                        <td className=" py-3 text-[10px] font-normal font-sans">{convdate(item.bookingEpochTime)}</td>
+                                        <td className="px-4 py-3 text-ms font-normal text-xs text-center">{item.packageTitle}</td>
+                                        <td className="py-3 text-center items-center justify-center flex ">
+                                            <div className={`py-1 px-2 font-medium font-inter text-white max-w-[100px] text-[10px]/[12px] ${!item.offlineBooking?"bg-[#35DBA2]":"bg-[#FFCA28]"} rounded-full`}> {item.cat ==="offline_bookings" ? "Offline Payment" : "Online Payment"}</div>
                                         </td>
                                     </tr>
                                 )

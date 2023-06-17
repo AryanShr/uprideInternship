@@ -32,7 +32,7 @@ function MainContent() {
 
     return (
         <div className='ml-4 md:ml-11 mt-9'>
-            <div className=' text-2xl font-semibold  flex items-center'>
+            <div className=' text-2xl font-semibold font-inter  flex items-center'>
                 View Bookings
                 <svg className='ml-4' width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M35.5334 41H38.2667C38.9916 41 39.6869 40.712 40.1995 40.1994C40.7121 39.6868 41 38.9916 41 38.2667V2.73333C41 2.00841 40.7121 1.31317 40.1995 0.800575C39.6869 0.287975 38.9916 0 38.2667 0H35.5334V41Z" fill="#36393F" />
@@ -56,11 +56,11 @@ function MainContent() {
                 </svg>
 
             </div>
-            <div className="w-[95%] xl:w-[65%] flex flex-col">
+            <div className="w-[95%] lg:w-[55%] flex flex-col font-opensans mt-4">
                 <div className='w-full  border-b-2 border-gray-200'>
-                    <ul className="flex justify-between text-center w-[80%] text-gray-500">
+                    <ul className="flex justify-between text-center w-[80%] lg:w-[60%] text-gray-500">
                         <li className="">
-                            <button onClick={() => setActive(1)} className={`flex justify-center px-8 border-b-4 border-transparent py-2 ${Active === 1 && "text-[#FF5757]"}`}>
+                            <button onClick={() => setActive(1)} className={`flex justify-center px-4 lg:px-8 border-b-4 border-transparent pt-2 ${Active === 1 && "text-[#FF5757]"}`}>
                                 Active
                             </button>
                             {Active === 1 && <div className="w-full h-[5px] bg-gradient-to-b from-[#FC8F8F] to-[#FF5757] rounded-lg">
@@ -68,13 +68,13 @@ function MainContent() {
                             </div>}
                         </li>
                         <li>
-                            <button onClick={() => setActive(2)} className={`flex justify-center px-8 border-b-4 border-transparent py-2 ${Active === 2 && "text-[#FF5757]"}`}>Completed</button>
+                            <button onClick={() => setActive(2)} className={`flex justify-center px-4 lg:px-8 border-b-4 border-transparent pt-2 ${Active === 2 && "text-[#FF5757]"}`}>Completed</button>
                             {Active === 2 && <div className="w-full h-[5px] bg-gradient-to-b from-[#FC8F8F] to-[#FF5757] rounded-lg">
 
                             </div>}
                         </li>
                         <li>
-                            <button onClick={() => setActive(3)} className={`flex justify-center px-4 sm:px-8 border-b-4 border-transparent py-2 ${Active === 3 && "text-[#FF5757]"}`}>Canceled</button>
+                            <button onClick={() => setActive(3)} className={`flex justify-center px-4 lg:px-8 border-b-4 border-transparent pt-2 ${Active === 3 && "text-[#FF5757]"}`}>Canceled</button>
                             {Active === 3 && <div className="w-full h-[5px] bg-gradient-to-b from-[#FC8F8F] to-[#FF5757] rounded-lg">
 
                             </div>}

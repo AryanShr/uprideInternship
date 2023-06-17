@@ -98,7 +98,7 @@ export default function SideBar(props) {
                     </Disclosure>
                 </div>
             </div>
-            <div className='flex items-center text-center'>
+            <div className='flex items-center text-center '>
 
                 <button className="sm:hidden  bg-gradient-to-b from-[#FB8085] to-[#FF5757] rounded-full px-8 py-4 my-4 mx-5 shadow-md text-md text-white flex items-center w-full h-full justify-center">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className='mr-2'>
@@ -109,10 +109,10 @@ export default function SideBar(props) {
                     New Booking
                 </button>
             </div>
-            <nav className='w-full mt-8 flex flex-col items-center justify-center'>
+            <nav className='w-full mt-8 flex flex-col items-center justify-center font-semibold font-opensans'>
                 <ul className='w-full text-center'>
                     <li>
-                        <div className={`text-[#fff] text-2xl font-semibold py-5 hover:bg-[#D9D9D926] ${active==0 && 'bg-[#D9D9D926]'} flex`}>
+                        <div className={`text-[#fff] text-xl font-semibold py-5 hover:bg-[#D9D9D926] ${active==0 && 'bg-[#D9D9D926]'} flex`}>
                             <div className='ml-10 w-[20%]'>
 
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +124,7 @@ export default function SideBar(props) {
                             </div>
                         </div>
                     </li>
-                    <li className={`text-[#fff] text-2xl font-semibold py-5 hover:bg-[#D9D9D926] ${active==1 && 'bg-[#D9D9D926]'} flex`}>
+                    <li className={`text-[#fff] text-xl font-semibold py-5 hover:bg-[#D9D9D926] ${active==1 && 'bg-[#D9D9D926]'} flex`}>
                         <div className='ml-10 w-[20%]'>
 
                             <svg width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -157,7 +157,7 @@ export default function SideBar(props) {
                             My Earnings
                         </div>
                     </li>
-                    <li className={`text-[#fff] text-2xl font-semibold py-5 hover:bg-[#D9D9D926] ${active==2 && 'bg-[#D9D9D926]'} flex`}>
+                    <li className={`text-[#fff] text-xl font-semibold py-5 hover:bg-[#D9D9D926] ${active==2 && 'bg-[#D9D9D926]'} flex`}>
                         <div className='ml-10 w-[20%]'>
 
                             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -169,7 +169,7 @@ export default function SideBar(props) {
                             My Savings
                         </div>
                     </li>
-                    <li className={`text-[#fff] text-2xl font-semibold py-5 hover:bg-[#D9D9D926] ${active==3 && 'bg-[#D9D9D926]'} flex`}>
+                    <li className={`text-[#fff] text-xl font-semibold py-5 hover:bg-[#D9D9D926] ${active==3 && 'bg-[#D9D9D926]'} flex`}>
                         <div className='ml-10 w-[20%]'>
                             <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_d_1_45)">
