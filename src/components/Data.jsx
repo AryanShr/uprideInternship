@@ -5,7 +5,7 @@ import Pagination from './Pagination';
 import { useState, useMemo } from 'react';
 
 
-let PageSize = 8;
+let PageSize = 7;
 
 
 const convdate = (date) => {
@@ -40,7 +40,7 @@ function Data(props) {
                             {currentTableData.map(item => {
                                 return (
                                     // eslint-disable-next-line react/jsx-key
-                                    <tr className="text-gray-700">
+                                    <tr className="text-black">
                                         <td className="px-4 py-3 ">
                                             <div className="flex items-center text-sm">
                                                 <div className="hidden relative w-8 h-8 mr-3 rounded-full md:block">
